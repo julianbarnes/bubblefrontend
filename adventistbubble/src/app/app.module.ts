@@ -11,10 +11,17 @@ import { EventCardComponent } from './event-list/event-card/event-card.component
 import { ReactiveFormsModule } from '@angular/forms'
 //Angular Material
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material';
 import { MatSliderModule,  } from '@angular/material/slider';
+import {MatGridListModule} from '@angular/material';
+
+
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { EventInputComponent } from './event-list/event-input/event-input.component';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +32,17 @@ import { FileUploadComponent } from './components/file-upload/file-upload.compon
     NavBarComponent,
     EventCardComponent,
     EventInputComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    UserProfileComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     MatSliderModule,
     MatCardModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatGridListModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
